@@ -32,13 +32,13 @@
         var classification = "";
         if (bmi.toFixed(1) < 18.5){
             classification= "Underweight";
-            }
-        else if (bmi.toFixed(1) >= 18.5){
+          }
+        else if (bmi.toFixed(1) >= 18.5 && bmi.toFixed(1) < 25){
             classification= "Normal";
-            }
-        else if (bmi.toFixed(1) >= 25){
+          }
+        else if (bmi.toFixed(1) >=25 && bmi.toFixed(1) <30){
             classification= "Overweight";
-            }
+          }
         else if (bmi.toFixed(1) >= 30){
             classification= "Obese";
           }
@@ -56,13 +56,13 @@
         var classification = "";
         if (bmi.toFixed(1) < 18.5){
             classification= "Underweight";
-            }
-        else if (bmi.toFixed(1) >= 18.5){
+          }
+        else if (bmi.toFixed(1) >= 18.5 && bmi.toFixed(1) < 25){
             classification= "Normal";
-            }
-        else if (bmi.toFixed(1) >= 25){
+          }
+        else if (bmi.toFixed(1) >=25 && bmi.toFixed(1) <30){
             classification= "Overweight";
-            }
+          }
         else if (bmi.toFixed(1) >= 30){
             classification= "Obese";
           }
