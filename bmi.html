@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./css/bmi.css">
+<style>
+
+body {
+    background-image: url();
+    font-family: Helvetica, Courier, serif, Arial;
+}
+
+}
+#b1 {
+ visibility:hidden;
+}
+
+</style>
+</head>
+
+<body>
+  <div id=BMICalc>
+    <h1>Body Mass Index Calculator</h1>
+
+    <div>
+        <button id="b1" onclick="toggle()">Use Metric</button>
+        <button id="b2" onclick="toggle()">Use Standard</button>
+    </div>
+
+    <div id=Standard>
+        <h3>Height:</h3>
+        <input type="number" id="feet" name="feet" min="4" max="7">
+        <label for="feet">feet</label>
+        <br>
+        <input type="number" id="inches" name="inches" min="0" max="11">
+        <label for="inches">inches</label>
+        <h3>Weight:</h3>
+        <input type="number" id="pounds" name="pounds" min="20" max="1400">
+        <label for="pounds">pounds</label>
+        <br>
+        <br>
+        <button onclick="computeStandard()">Compute BMI</button>
+    </div>
+
+    <div id=Metric>
+        <h3>Height:</h3>
+         <input type="number" id="centimeters" name="centimeters" min="122" max="241">
+         <label for="centimeters">centimeters</label>
+        <h3>Weight:</h3>
+         <input type="number" id="kilograms" name="kilograms" min="10" max="635">
+         <label for="kilograms">kilograms</label>
+         <br>
+         <br>
+         <button onclick="computeMetric()">Compute BMI</button>
+    </div>
+
+    <p id=Result></p>
+
+  </div>
+    <script src="./js/bmi.js"></script>
+
+</body>
+</html>

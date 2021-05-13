@@ -1,0 +1,46 @@
+body {
+  background-color: rgba(35, 221, 240, 0.74);
+  background-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+#BMICalc {
+  border: 5px solid rgb(21, 0, 74);
+  border-radius: 15px;
+  margin: auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-align: left;
+  background: rgb(63, 0, 97);
+}
+
+button {
+  background-color: #6e6bfb;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {background-color: #9722ff}
+
+#Metric {
+ display: none; /* Hide form*/
+}
+
+#b2{
+    visibility:hidden; /*Hide button*/
+}
